@@ -8,7 +8,7 @@ fun main(arguments: Array<String>) {
     // Check whether enough command-line arguments are supplied; if not, print the error message and exit with status code 1
     if (arguments.size < 3) {
         println("Error: values for a, b, c required on command line")
-        exitprocess(1)
+        exitProcess(1)
     }
     // Read the three side lengths of the triangle from the command line
     val a = arguments[0].toDouble()
@@ -19,5 +19,5 @@ fun main(arguments: Array<String>) {
     val sp = (a + b + c) / 2.0
     val area = sqrt(sp * (sp - a) * (sp - b) * (sp - c))
     // Print the result
-    printlin("Area = " + "%.5f".format(Locale.US, area))
+    println("Area = " + "%.5f".format(area))
 }
